@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Cuenta regresiva</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Cuenta regresiva</h1>
+
+<div id="display" class="display">
+00:00:00
+</div>
+
+<div id="keypad" class="keypad"></div>
+
+<div class="controls">
+
+<button id="startPause" class="btn">
+<i class="fa-solid fa-play"></i>
+Iniciar
+</button>
+
+<button id="reset" class="btn">
+<i class="fa-solid fa-rotate-left"></i>
+Reiniciar
+</button>
+
+</div>
+
+<div class="navigation">
+
+<a href="index.html" class="btn back">
+<i class="fa-solid fa-arrow-left"></i>
+Volver
+</a>
+
+</div>
+
+<div class="theme-toggle">
+
+<button id="toggleDark" class="btn">
+<i class="fa-solid fa-moon"></i>
+Modo oscuro
+</button>
+
+</div>
+
+</div>
+
+<audio id="alarm" src="sounds/alarm.mp3"></audio>
+
+<script src="js/main.js"></script>
+<script src="js/countdown.js"></script>
+
+</body>
+</html>
