@@ -60,7 +60,7 @@ if(!running){
 
 seconds=0
 
-display.textContent="00:00:00"
+display.textContent = formatTime(seconds)
 
 }
 
