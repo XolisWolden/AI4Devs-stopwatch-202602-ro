@@ -6,6 +6,11 @@ const display = document.getElementById("display")
 const startPause = document.getElementById("startPause")
 const reset = document.getElementById("reset")
 
+/**
+ * Formats seconds into HH:MM:SS string.
+ * @param {number} s - Total seconds.
+ * @returns {string} Formatted time string.
+ */
 function formatTime(s){
 
 let h = Math.floor(s/3600)
@@ -16,6 +21,9 @@ return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sec).
 
 }
 
+/**
+ * Updates the stopwatch by incrementing seconds and refreshing display.
+ */
 function update(){
 
 seconds++

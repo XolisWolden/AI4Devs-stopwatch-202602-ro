@@ -1,33 +1,42 @@
-**Chatbot**: ChatGpt
+# Prompts Used for AI Generation
 
-Url con interacción chatbot:
+**Chatbot**: ChatGPT
+
+URL con interacción del chatbot:
 
 https://chatgpt.com/share/69b5bb96-fe3c-8003-8a6d-1ecb2f00362d
 
+## Prompt 1
 
+Genera un prompt basado en esta plantilla:
 
-**Prompt 1:**
+- # Contexto del proyecto [Stack tecnológico, arquitectura, convenciones de código]
+- # Tarea a realizar [Descripción detallada del feature]
+- # Criterios de aceptación [Lista específica de qué debe cumplir la solución]
+- # Restricciones [Lo que NO debe hacer, límites de scope]
+- # Archivos relevantes [Lista de ficheros a considerar o modificar]
+- # Formato de entrega [PRs, tests requeridos, documentación]
 
-Genera un prompt basado en esta plantilla # Contexto del proyecto [Stack tecnológico, arquitectura, convenciones de código] # Tarea a realizar [Descripción detallada del feature] # Criterios de aceptación [Lista específica de qué debe cumplir la solución] # Restricciones [Lo que NO debe hacer, límites de scope] # Archivos relevantes [Lista de ficheros a considerar o modificar] # Formato de entrega [PRs, tests requeridos, documentación], el objetivo crear un cronometro y una cuenta regresica, en multiples archivos html,css y javascript, inicialmente se deben de mostrar 2 botones uno que enlace al cronometro y otro a la cuenta regresiva. El cronometro debe mostrar un reloj con segundos, minutos y horas inicializado en 0, ademas los botones de iniciar, pausar y reiniciar, al realizar el clic en el boton iniciar el reloj debe contar conforme a un reloj habitual, al realizar clic en el boton pausar el reloj se debe detener, considera que el boton iniciar y pausar son el mismo solo debe cambiar la leyenda a partir de si el reloj esta contando o esta detenido, el boton de reiniciar vuelve a inicializar en 0 el reloj siempre y cuando el reloj este detenido. La cuenta regresiva se debe mostrar el mismo reloj del cronometro, y botones del 0 al 9 que permitan elejir el tiempo inicial para la cuenta regresiva, ademas botones para iniciar, pausar o reiniciar la cuenta regresiva, el inicio debe comenzar la cuenta regresiva siempre y cuando el reloj tenga valores mayor 0, si los valores son 0 resaltarlo en el reloj el boton pausar detendra el conteo, considera que el boton iniciar y pausar son el mismo solo debe cambiar la leyenda a partir de si el reloj esta contando o esta detenido, el boton de reiniciar vuelve a inicializar en 0 el reloj siempre y cuando el reloj este detenido. Consideraciones adicionales, utliza hojas de estilo para que los botones tengan puntos redondeadas manejo de colores sutiles y sombreados. todos los botones deben tener texto e icono alusivo a su funcionalidad. Si tienes dudas en funcionalidad o diseño hazmelas saber.
+El objetivo es crear un cronómetro y una cuenta regresiva, en múltiples archivos HTML, CSS y JavaScript. Inicialmente se deben mostrar 2 botones: uno que enlace al cronómetro y otro a la cuenta regresiva. El cronómetro debe mostrar un reloj con segundos, minutos y horas inicializado en 0, además los botones de iniciar, pausar y reiniciar. Al realizar clic en el botón iniciar, el reloj debe contar conforme a un reloj habitual. Al realizar clic en el botón pausar, el reloj se debe detener. Considera que el botón iniciar y pausar son el mismo, solo debe cambiar la leyenda a partir de si el reloj está contando o está detenido. El botón de reiniciar vuelve a inicializar en 0 el reloj siempre y cuando el reloj esté detenido. La cuenta regresiva se debe mostrar el mismo reloj del cronómetro, y botones del 0 al 9 que permitan elegir el tiempo inicial para la cuenta regresiva, además botones para iniciar, pausar o reiniciar la cuenta regresiva. El inicio debe comenzar la cuenta regresiva siempre y cuando el reloj tenga valores mayor a 0. Si los valores son 0, resáltalo en el reloj. El botón pausar detendrá el conteo. Considera que el botón iniciar y pausar son el mismo, solo debe cambiar la leyenda a partir de si el reloj está contando o está detenido. El botón de reiniciar vuelve a inicializar en 0 el reloj siempre y cuando el reloj esté detenido. Consideraciones adicionales: utiliza hojas de estilo para que los botones tengan bordes redondeados, manejo de colores sutiles y sombreados. Todos los botones deben tener texto e icono alusivo a su funcionalidad. Si tienes dudas en funcionalidad o diseño, házmelo saber.
 
-**Prompt 2:**
+## Prompt 2
+
 Chatbot: Dudas a aclarar
 
 Antes de implementar sería útil confirmar:
 
-¿El formato del reloj debe ser HH:MM:SS fijo o permitir también MM:SS?
+- ¿El formato del reloj debe ser HH:MM:SS fijo o permitir también MM:SS?
 
 En la cuenta regresiva:
 
-¿Los números 0–9 deben llenar el tiempo como teclado tipo temporizador (ej: 1 5 0 → 1:50)?
+- ¿Los números 0–9 deben llenar el tiempo como teclado tipo temporizador (ej: 1 5 0 → 1:50)?
+- ¿O deben seleccionar directamente minutos/segundos?
 
-¿O deben seleccionar directamente minutos/segundos?
-
-¿Deseas usar iconos con SVG, FontAwesome o emoji simples?
+- ¿Deseas usar iconos con SVG, FontAwesome o emoji simples?
 
 Si quieres, también puedo generarte una versión optimizada de este prompt para IA tipo GPT/Copilot que produce código mucho mejor (prompt profesional de ingeniería de software).
 
-Prompt: ¿El formato del reloj debe ser HH:MM:SS fijo o permitir también MM:SS? fijo, ¿Los números 0–9 deben llenar el tiempo como teclado tipo temporizador (ej: 1 5 0 → 1:50)? esto es correcto, ¿Deseas usar iconos con SVG, FontAwesome o emoji simples? fontawesome, genera una versión optimizada para Gpt
+Prompt: ¿El formato del reloj debe ser HH:MM:SS fijo o permitir también MM:SS? Fijo. ¿Los números 0–9 deben llenar el tiempo como teclado tipo temporizador (ej: 1 5 0 → 1:50)? Esto es correcto. ¿Deseas usar iconos con SVG, FontAwesome o emoji simples? FontAwesome. Genera una versión optimizada para GPT.
 
 **Prompt 3:**
 Chatbot: Si lo deseas, también puedo darte una versión aún más potente llamada "Super Prompt para generación de apps completas" que hace que GPT genere mejor arquitectura, menos bugs y UI más profesional.

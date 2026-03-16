@@ -1,5 +1,8 @@
 const toggle = document.getElementById("toggleDark")
 
+/**
+ * Applies the saved theme from localStorage to the document body.
+ */
 function applyTheme(){
 
 const theme = localStorage.getItem("theme")

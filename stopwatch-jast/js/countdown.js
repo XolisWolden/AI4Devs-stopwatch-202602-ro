@@ -8,6 +8,11 @@ const reset = document.getElementById("reset")
 const keypad = document.getElementById("keypad")
 const alarm = document.getElementById("alarm")
 
+/**
+ * Formats seconds into HH:MM:SS string.
+ * @param {number} s - Total seconds.
+ * @returns {string} Formatted time string.
+ */
 function formatTime(s){
 
 let h = Math.floor(s/3600)
@@ -18,12 +23,18 @@ return `${String(h).padStart(2,'0')}:${String(m).padStart(2,'0')}:${String(sec).
 
 }
 
+/**
+ * Updates the display with current time.
+ */
 function updateDisplay(){
 
 display.textContent=formatTime(seconds)
 
 }
 
+/**
+ * Decrements seconds and updates display; stops at zero and plays alarm.
+ */
 function tick(){
 
 seconds--
@@ -35,6 +46,14 @@ if(seconds<=0){
 clearInterval(interval)
 
 running=false
+
+seconds = 0
+
+updateDisplay()
+
+startPause.innerHTML='<i class="fa-solid fa-play"></i> Iniciar'
+
+display.style.color = "#00ff00"
 
 alarm.play()
 
